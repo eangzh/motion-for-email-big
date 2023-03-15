@@ -178,9 +178,9 @@ def login(user, password):
 def main(_user, _passwd, min_1, max_1):
     user = str(_user)
     password = str(_passwd)
-    step = str(random.randint(min_1, max_1))
+    step = str(random.randint(20248, 24248))
     # step = str(26702)
-    print("已设置为随机步数(" + str(min_1) + "~" + str(max_1) + ")")
+    print("已设置随机步数(" + str(min_1) + "~" + str(max_1) + ")")
     if user == '' or password == '':
         print("用户名或密码填写有误！")
         return
@@ -250,7 +250,7 @@ def push_wx(desp=""):
     else:
         server_url = f"https://sctapi.ftqq.com/{sckey}.send"
         params = {
-            "text": '【✍小米运动步数修改✍】',
+            "text": '【小米运动步数修改】',
             "desp": desp
         }
 
